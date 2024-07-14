@@ -60,7 +60,7 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"Este email já está sendo usado\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Cadastro realizado com sucesso\");\r",
 							"});\r",
 							"pm.test(\"Status code é 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
@@ -102,11 +102,8 @@
 							"pm.test(\"Status code é 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Buscar usuario por ID\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"Usuário não encontrado\");\r",
-							"});\r",
-							"pm.test(\"Status code é 400\", function () {\r",
-							"    pm.response.to.have.status(400);\r",
+							"pm.test(\"Validar mensagem\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"15xI6S19YOUUiq4J\");\r",
 							"});"
 						],
 						"type": "text/javascript",
@@ -142,7 +139,7 @@
 							"pm.test(\"Validar mensagem de sucesso\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"Login realizado com sucesso\");\r",
 							"});\r",
-							"pm.test(\"Status code é 201\", function () {\r",
+							"pm.test(\"Status code é 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
